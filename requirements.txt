@@ -1,0 +1,8 @@
+numpy >= 1.26.4
+pytorch >= 2.3.0
+torchvision >= 0.18.0
+scikit-learn >= 1.4.2
+timm >= 0.9.16
+faiss-cpu >= 1.8.0
+wandb >= 0.17.0
+tqdm >= 4.66.2

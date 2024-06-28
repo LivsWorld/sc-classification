@@ -1,0 +1,57 @@
+method: random
+metric:
+  goal: minimize
+  name: validation/accuracy
+parameters:
+  batch_size:
+    distribution: q_log_uniform_values
+    max: 256
+    min: 32
+    q: 8
+  dataset:
+    value: SC-2000
+  device:
+    value: mps
+  train_aug:
+    value: True
+  show_misclass:
+    value: False
+  dropout_rate:
+    values:
+      - 0.1
+      - 0.2
+      - 0.3
+      - 0.4
+      - 0.5
+  epochs:
+    value: 7
+  fc_model:
+    values:
+      - lin1
+      - lin2
+      - lin3
+  fc1_in:
+    value: 1024
+  fc2_in:
+    distribution: q_uniform
+    max: 1024
+    min: 1
+  fc3_in:
+    distribution: q_uniform
+    max: 750
+    min: 1
+  feat_extractor:
+    value: densenet121
+  learning_rate:
+    distribution: uniform
+    max: 0.01
+    min: 1e-06
+  output:
+    value: 2
+  pool:
+    values:
+      - avg
+      - max
+      - avgmax
+  save_as:
+    value: pth
