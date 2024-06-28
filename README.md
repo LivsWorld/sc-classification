@@ -2,6 +2,8 @@
 
 Code for Olivia Shen's ECS 174 final project. Images for the `SC-2000v2` dataset were provided by John T Shen MD Corp. The `SC-2000v2` dataset and code for splitting data is not included to protect patient and business privacy.
 
+See the paper with experiments and results [here](https://drive.google.com/file/d/1QgBwEpoBxuFDCA7sYrppjSK4d822T0za/view).
+
 ## Packages
 See `requirements.txt`.
 
